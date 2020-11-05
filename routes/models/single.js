@@ -7,3 +7,6 @@ module.exports = (req, res) => {
 
     res.status(200).json({ model });
 };
+
+//file gets data from the json and sets the 
+//model ID on the return of the export
