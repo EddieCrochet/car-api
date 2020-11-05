@@ -3,6 +3,7 @@ const data = require('../../data.json');
 module.exports = (req, res) => {
     //coerces our modelId from a string to an integer
     const modelId = req.params.modelId * 1;
+    //then get the model that matched the modelID of the cars(req.params)
     const model = data.models.find(m => m.id === modelId);
 
     res.status(200).json({ model });
